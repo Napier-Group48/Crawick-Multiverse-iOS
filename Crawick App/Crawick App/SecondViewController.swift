@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,MFMailComposeViewControllerDelegate {
 
     
 
@@ -29,27 +29,27 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
     
     // strings for storing answers
     var VisitDate = ""
-    var GSize = ""
-    var AgeYoung = ""
-    var AgeOld = ""
-    var Travel = ""
-    var FoundUs = ""
-    var Download = ""
-    var ImproveVisit = ""
-    var Experince = ""
-    var Feels = ""
+    var GSize = "Question Not answered"
+    var AgeYoung = "Question Not answered"
+    var AgeOld = "Question Not answered"
+    var Travel = "Question Not answered"
+    var FoundUs = "Question Not answered"
+    var Download = "Question Not answered"
+    var ImproveVisit = "Question Not answered"
+    var Experince = "Question Not answered"
+    var Feels = "Question Not answered"
     //array for storing questions
     var SurveyQuestions:[String]?
     //Array for pickerview
-    let AgeRange = ["Under 5","5 - 11", "12 - 17","18 - 24","25 - 34","35 - 44", "45 - 54" ,"55+"]
+    let AgeRange = ["Please Select","Under 5","5 - 11", "12 - 17","18 - 24","25 - 34","35 - 44", "45 - 54" ,"55+"]
     
-    let GroupSize = ["1","2","3 - 4", "5 - 9", "10+"]
+    let GroupSize = ["Please Select","1","2","3 - 4", "5 - 9", "10+"]
     
-    let Distance = ["We're Local", "10 - 20 miles","30 - 60 miles","60 + miles"]
+    let Distance = ["Please Select","We're Local", "10 - 20 miles","30 - 60 miles","60 + miles"]
     
-    let YesNo = ["Yes","No"]
+    let YesNo = ["Please Select","Yes","No"]
     
-    let FindOut = ["Local Knowlegde","Another tourist attraction","Website", "Social Media","Internet Search", "Other (please specify)"]
+    let FindOut = ["Please Select","Local Knowlegde","Another tourist attraction","Website", "Social Media","Internet Search", "Other (please specify)"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -190,7 +190,15 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
         donePick()
         Experince = ExpText.text
         Feels = ExplreText.text
-        sendSurvey()
+        let mailComposeViewController = configureMailController()
+        if MFMailComposeViewController.canSendMail()
+        {
+            self.present(mailComposeViewController,animated: true,completion: nil)
+        }
+        else{
+            showMailError()
+        }
+        //sendSurvey()
     }
     
     func donePick(){
@@ -199,45 +207,51 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
         dateFormatter.dateFormat = "dd-MM-yyyy"
         VisitDate = dateFormatter.string(from: DatePicker.date)
         self.view.endEditing(true)
+        
     }
-    func sendSurvey() {
-        if MFMailComposeViewController.canSendMail() {
+    func configureMailController() -> MFMailComposeViewController {
+        
             let mail = MFMailComposeViewController()
-            mail.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
+        mail.mailComposeDelegate = self
            //change email
-        mail.setToRecipients(["napier.group48@gmail.com"])
-            mail.setSubject("Crawick Muultiverse Survey")
+            mail.setToRecipients(["napier.group48@gmail.com"])
+            mail.setSubject("Crawick Multiverse Survey")
             //message body
-            mail.setMessageBody("<p>" + SurveyQuestions![0] + "</p>" +
+            mail.setMessageBody("<p>What was the date of your Visit? </p>" +
                                 "<p>" + VisitDate + "</p>" +
-                                "<p>" + SurveyQuestions![1] + "</p>" +
+                                "<p>How many people were in your group? </p>" +
                                 "<p>" + GSize + "</p>" +
-                                "<p>" + SurveyQuestions![2] + "</p>" +
+                                "<p>How old was the youngest person in your group? </p>" +
                                 "<p>" + AgeYoung + "</p>" +
-                                "<p>" + SurveyQuestions![3] + "</p>" +
+                                "<p>How old was the oldest person in your group? </p>" +
                                 "<p>" + AgeOld + "</p>" +
-                                "<p>" + SurveyQuestions![4] + "</p>" +
+                                "<p>How far did you travel to get here? </p>" +
                                 "<p>" + Travel + "</p>" +
-                                "<p>" + SurveyQuestions![5] + "</p>" +
+                                "<p>What was your experience of Crawick Multiverse? </p>" +
                                 "<p>" + Experince + "</p>" +
-                                "<p>" + SurveyQuestions![6] + "</p>" +
+                                "<p>How did you feel while exploring Crawick Multiverse? </p>" +
                                 "<p>" + Feels + "</p>" +
-                                "<p>" + SurveyQuestions![7] + "</p>" +
+                                "<p>How did you find out out about Crawick Multiverse? </p>" +
                                 "<p>" + FoundUs + "</p>" +
-                                "<p>" + SurveyQuestions![8] + "</p>" +
+                                "<p>Did you Download this App before Visiting? </p>" +
                                 "<p>" + Download + "</p>" +
-                                "<p>" + SurveyQuestions![9] + "</p>" +
+                                "<p>Did this app help improve your experience of Crawick Multiverse? </p>" +
                                 "<p>" + ImproveVisit + "</p>" , isHTML: true)
-            
-            present(mail, animated: true)
-        } else {
-            // show failure alert
-        }
+        
+        return mail
+        
     }
-    
+    func showMailError(){
+        let sendMailErrorAlert = UIAlertController(title:"Could not send email", message: " Sorryyour email could not be sent", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .default, handler: nil)
+        sendMailErrorAlert.addAction(dismiss)
+        self.present(sendMailErrorAlert, animated: true, completion: nil)
+        
+    }
+
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true)
+        controller.dismiss(animated: true, completion: nil)
     }
-}
+    }
 
 
