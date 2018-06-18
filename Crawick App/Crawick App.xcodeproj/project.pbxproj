@@ -24,7 +24,6 @@
 		B013D79E2067D39E00D296C4 /* Entrance 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D78D2067D39A00D296C4 /* Entrance 2.jpg */; };
 		B013D79F2067D39E00D296C4 /* Access To Cosimc Collision.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D78E2067D39B00D296C4 /* Access To Cosimc Collision.jpg */; };
 		B013D7A12067D39E00D296C4 /* Omphalos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7902067D39B00D296C4 /* Omphalos.jpg */; };
-		B013D7A22067D39E00D296C4 /* Mosaic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7912067D39B00D296C4 /* Mosaic.jpg */; };
 		B013D7A32067D39E00D296C4 /* Super Cluster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7922067D39C00D296C4 /* Super Cluster.jpg */; };
 		B013D7A42067D39E00D296C4 /* Belvedere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7932067D39C00D296C4 /* Belvedere.jpg */; };
 		B013D7A52067D39E00D296C4 /* Cosmic Collisions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7942067D39D00D296C4 /* Cosmic Collisions.jpg */; };
@@ -48,7 +47,11 @@
 		B013D7CB2068040300D296C4 /* Exhibit-Data.txt in Resources */ = {isa = PBXBuildFile; fileRef = B013D7CA2068040200D296C4 /* Exhibit-Data.txt */; };
 		B013D7D5206BBD6D00D296C4 /* EventsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013D7D4206BBD6D00D296C4 /* EventsWebView.swift */; };
 		B013D7D7206BE1FA00D296C4 /* ExhibitTab.png in Resources */ = {isa = PBXBuildFile; fileRef = B013D7D6206BE1FA00D296C4 /* ExhibitTab.png */; };
+		B015A02F20D78FCC00F10AB0 /* Mosaic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B015A02E20D78FCB00F10AB0 /* Mosaic.jpg */; };
+		B015A03120D792BD00F10AB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B015A03020D792BD00F10AB0 /* Images.xcassets */; };
 		B0345F442080BE79000F43B3 /* ParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0345F432080BE79000F43B3 /* ParkViewController.swift */; };
+		B06F8D0E20C6CEE600CFF08B /* Audio Files in Resources */ = {isa = PBXBuildFile; fileRef = B06F8D0D20C6CEE500CFF08B /* Audio Files */; };
+		B06F8D1020C6E01200CFF08B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B06F8D0F20C6E01100CFF08B /* Logo.png */; };
 		B0B12AF9207FD7830073017C /* TestAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0B12AF8207FD7820073017C /* TestAudio.mp3 */; };
 		B0B12AFD207FE10C0073017C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B12AFC207FE10C0073017C /* MapKit.framework */; };
 		B0B12B07207FEDDC0073017C /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0B12B06207FEDDC0073017C /* map.jpg */; };
@@ -76,7 +79,6 @@
 		B013D78D2067D39A00D296C4 /* Entrance 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Entrance 2.jpg"; sourceTree = "<group>"; };
 		B013D78E2067D39B00D296C4 /* Access To Cosimc Collision.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Access To Cosimc Collision.jpg"; sourceTree = "<group>"; };
 		B013D7902067D39B00D296C4 /* Omphalos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Omphalos.jpg; sourceTree = "<group>"; };
-		B013D7912067D39B00D296C4 /* Mosaic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mosaic.jpg; sourceTree = "<group>"; };
 		B013D7922067D39C00D296C4 /* Super Cluster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Super Cluster.jpg"; sourceTree = "<group>"; };
 		B013D7932067D39C00D296C4 /* Belvedere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Belvedere.jpg; sourceTree = "<group>"; };
 		B013D7942067D39D00D296C4 /* Cosmic Collisions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cosmic Collisions.jpg"; sourceTree = "<group>"; };
@@ -100,7 +102,11 @@
 		B013D7CA2068040200D296C4 /* Exhibit-Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Exhibit-Data.txt"; sourceTree = "<group>"; };
 		B013D7D4206BBD6D00D296C4 /* EventsWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsWebView.swift; sourceTree = "<group>"; };
 		B013D7D6206BE1FA00D296C4 /* ExhibitTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExhibitTab.png; sourceTree = "<group>"; };
+		B015A02E20D78FCB00F10AB0 /* Mosaic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mosaic.jpg; sourceTree = "<group>"; };
+		B015A03020D792BD00F10AB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0345F432080BE79000F43B3 /* ParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkViewController.swift; sourceTree = "<group>"; };
+		B06F8D0D20C6CEE500CFF08B /* Audio Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Audio Files"; sourceTree = "<group>"; };
+		B06F8D0F20C6E01100CFF08B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		B0B12AF8207FD7820073017C /* TestAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TestAudio.mp3; sourceTree = "<group>"; };
 		B0B12AFC207FE10C0073017C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B0B12B06207FEDDC0073017C /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
@@ -150,9 +156,11 @@
 				B0345F432080BE79000F43B3 /* ParkViewController.swift */,
 				B013D7722066AB0300D296C4 /* Main.storyboard */,
 				B013D7752066AB0300D296C4 /* Assets.xcassets */,
+				B06F8D0D20C6CEE500CFF08B /* Audio Files */,
 				B0B12B06207FEDDC0073017C /* map.jpg */,
 				B0B12AF8207FD7820073017C /* TestAudio.mp3 */,
 				B013D7D6206BE1FA00D296C4 /* ExhibitTab.png */,
+				B06F8D0F20C6E01100CFF08B /* Logo.png */,
 				B013D7CA2068040200D296C4 /* Exhibit-Data.txt */,
 				B0DEBA2B20AAE6F600F83F58 /* Survey.txt */,
 				B013D7C82067FEDE00D296C4 /* Access-to-Cosmic-Collision.txt */,
@@ -177,9 +185,9 @@
 				B013D7942067D39D00D296C4 /* Cosmic Collisions.jpg */,
 				B013D7872067D39900D296C4 /* Comet Walk.jpg */,
 				B013D7882067D39900D296C4 /* Entrance.jpg */,
+				B015A02E20D78FCB00F10AB0 /* Mosaic.jpg */,
 				B013D78D2067D39A00D296C4 /* Entrance 2.jpg */,
 				B013D7892067D39900D296C4 /* Milky Way.jpg */,
-				B013D7912067D39B00D296C4 /* Mosaic.jpg */,
 				B013D78B2067D39A00D296C4 /* Multiverse.jpg */,
 				B013D7962067D39E00D296C4 /* Multiverse 1.jpg */,
 				B013D7862067D39900D296C4 /* North-South Avenue.jpg */,
@@ -187,6 +195,7 @@
 				B013D7922067D39C00D296C4 /* Super Cluster.jpg */,
 				B013D7772066AB0300D296C4 /* LaunchScreen.storyboard */,
 				B013D77A2066AB0300D296C4 /* Info.plist */,
+				B015A03020D792BD00F10AB0 /* Images.xcassets */,
 			);
 			path = "Crawick App";
 			sourceTree = "<group>";
@@ -264,12 +273,15 @@
 				B013D7BC2067E80700D296C4 /* Milky Way.txt in Resources */,
 				B013D7A12067D39E00D296C4 /* Omphalos.jpg in Resources */,
 				B013D7972067D39E00D296C4 /* North-South Avenue.jpg in Resources */,
+				B015A02F20D78FCC00F10AB0 /* Mosaic.jpg in Resources */,
 				B013D7792066AB0300D296C4 /* LaunchScreen.storyboard in Resources */,
+				B06F8D0E20C6CEE600CFF08B /* Audio Files in Resources */,
 				B0DEBA2C20AAE6F700F83F58 /* Survey.txt in Resources */,
 				B013D79F2067D39E00D296C4 /* Access To Cosimc Collision.jpg in Resources */,
 				B013D7A72067D39E00D296C4 /* Multiverse 1.jpg in Resources */,
 				B013D79C2067D39E00D296C4 /* Multiverse.jpg in Resources */,
 				B013D7762066AB0300D296C4 /* Assets.xcassets in Resources */,
+				B06F8D1020C6E01200CFF08B /* Logo.png in Resources */,
 				B013D79A2067D39E00D296C4 /* Milky Way.jpg in Resources */,
 				B013D7B92067E80700D296C4 /* Entrance.txt in Resources */,
 				B013D7BD2067E80700D296C4 /* The Void.txt in Resources */,
@@ -281,7 +293,6 @@
 				B013D7D7206BE1FA00D296C4 /* ExhibitTab.png in Resources */,
 				B013D7A52067D39E00D296C4 /* Cosmic Collisions.jpg in Resources */,
 				B013D7992067D39E00D296C4 /* Entrance.jpg in Resources */,
-				B013D7A22067D39E00D296C4 /* Mosaic.jpg in Resources */,
 				B013D79D2067D39E00D296C4 /* Amphitheatre.jpg in Resources */,
 				B013D7C02067E80700D296C4 /* Cosmic Collisions.txt in Resources */,
 				B013D7982067D39E00D296C4 /* Comet Walk.jpg in Resources */,
@@ -290,6 +301,7 @@
 				B013D7BF2067E80700D296C4 /* Comet Walk.txt in Resources */,
 				B013D7BE2067E80700D296C4 /* Mosaic.txt in Resources */,
 				B013D7C72067FEC600D296C4 /* Amphitheatre.txt in Resources */,
+				B015A03120D792BD00F10AB0 /* Images.xcassets in Resources */,
 				B0B12B07207FEDDC0073017C /* map.jpg in Resources */,
 				B013D7A62067D39E00D296C4 /* Andromeda.jpg in Resources */,
 				B013D7BB2067E80700D296C4 /* Andromeda.txt in Resources */,
@@ -450,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 496U486NQA;
 				INFOPLIST_FILE = "Crawick App/Info.plist";
@@ -467,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 496U486NQA;
 				INFOPLIST_FILE = "Crawick App/Info.plist";

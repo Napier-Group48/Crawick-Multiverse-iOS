@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,MFMailComposeViewControllerDelegate {
+class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,MFMailComposeViewControllerDelegate,UITextViewDelegate {
 
     
 
@@ -53,6 +53,8 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ExplreText.delegate = self
+        ExpText.delegate = self
         GroupPicker.delegate = self
         GroupPicker.dataSource = self
         YougestPicker.delegate = self
@@ -88,7 +90,14 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
         // Dispose of any resources that can be recreated.
     }
 
-
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
     public func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 1
     
@@ -214,7 +223,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
             let mail = MFMailComposeViewController()
         mail.mailComposeDelegate = self
            //change email
-            mail.setToRecipients(["napier.group48@gmail.com"])
+            mail.setToRecipients(["info@crawickmultiverse.co.uk"])
             mail.setSubject("Crawick Multiverse Survey")
             //message body
             mail.setMessageBody("<p>What was the date of your Visit? </p>" +

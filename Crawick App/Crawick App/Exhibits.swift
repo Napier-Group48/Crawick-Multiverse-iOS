@@ -8,13 +8,17 @@
 
 import UIKit
 import CoreLocation
+import AVFoundation
 
 class Exhibits: UIViewController, UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate {
     
     
     let cellContent = ["Entrance", "Access To Cosimc Collision", "Comet Walk","Belvedere","The Void","Cosmic Collisions","Amphitheatre","Mosaic","North-South Avenue","Omphalos","Super Cluster","Multiverse","Milky Way","Andromeda"]
     
+    let AudioContent = ["Audio Files/Location1", "Audio Files/Location2", "Audio Files/Location3","Audio Files/Location4","Audio Files/Location5","Audio Files/Location6","Audio Files/Location7","Audio Files/Location8","Audio Files/Location9","Audio Files/Location10","Audio Files/Location11","Audio Files/Location12","Audio Files/Location13","Audio Files/Location14"]
+    
     var locationManager = CLLocationManager()
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,9 +99,27 @@ class Exhibits: UIViewController, UITableViewDelegate,UITableViewDataSource,CLLo
         cell.imgExhibitsImage.image = UIImage(named:(cellContent [indexPath.row] + ".jpg"))
         cell.lblExhibitText.text = ExhibitData? [indexPath.row]
         cell.lblExhibitTitle.text = cellContent [indexPath.row]
+        
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let Audio = Bundle.main.path(forResource: AudioContent [indexPath.row], ofType: "wav")
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: Audio!))
+            
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+            try AVAudioSession.sharedInstance().setActive(true)
+        }
+        catch{
+            print(error)
+        }
+        audioPlayer.play()
+    }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        audioPlayer.stop()
+    }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         //print (locations)
