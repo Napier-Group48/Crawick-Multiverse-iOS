@@ -70,6 +70,23 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
         ImprovePicker.delegate = self
         ImprovePicker.dataSource = self
         // set up questions in an array
+
+        ExpText.layer.borderWidth = 0.5
+        ExplreText.layer.borderWidth = 0.5
+        /*GroupPicker.layer.borderWidth = 0.5
+        GroupPicker.layer.borderWidth = 0.5
+        YougestPicker.layer.borderWidth = 0.5
+        YougestPicker.layer.borderWidth = 0.5
+        OldestPicker.layer.borderWidth = 0.5
+        OldestPicker.layer.borderWidth = 0.5
+        TravelPicker.layer.borderWidth = 0.5
+        TravelPicker.layer.borderWidth = 0.5
+        FindOutPicker.layer.borderWidth = 0.5
+        FindOutPicker.layer.borderWidth = 0.5
+        DownloadPicker.layer.borderWidth = 0.5
+        DownloadPicker.layer.borderWidth = 0.5
+        ImprovePicker.layer.borderWidth = 0.5
+        */
         
         if let path = Bundle.main.path(forResource: "Survey", ofType: "txt"){
             do{
@@ -261,6 +278,8 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
+    
+    
     }
 
 

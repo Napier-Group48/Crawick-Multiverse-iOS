@@ -18,7 +18,7 @@
 		B013D7982067D39E00D296C4 /* Comet Walk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7872067D39900D296C4 /* Comet Walk.jpg */; };
 		B013D7992067D39E00D296C4 /* Entrance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7882067D39900D296C4 /* Entrance.jpg */; };
 		B013D79A2067D39E00D296C4 /* Milky Way.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D7892067D39900D296C4 /* Milky Way.jpg */; };
-		B013D79B2067D39E00D296C4 /* The Void.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D78A2067D39900D296C4 /* The Void.jpg */; };
+		B013D79B2067D39E00D296C4 /* View Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D78A2067D39900D296C4 /* View Image.jpg */; };
 		B013D79C2067D39E00D296C4 /* Multiverse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D78B2067D39A00D296C4 /* Multiverse.jpg */; };
 		B013D79D2067D39E00D296C4 /* Amphitheatre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D78C2067D39A00D296C4 /* Amphitheatre.jpg */; };
 		B013D79E2067D39E00D296C4 /* Entrance 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B013D78D2067D39A00D296C4 /* Entrance 2.jpg */; };
@@ -73,7 +73,7 @@
 		B013D7872067D39900D296C4 /* Comet Walk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Comet Walk.jpg"; sourceTree = "<group>"; };
 		B013D7882067D39900D296C4 /* Entrance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Entrance.jpg; sourceTree = "<group>"; };
 		B013D7892067D39900D296C4 /* Milky Way.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Milky Way.jpg"; sourceTree = "<group>"; };
-		B013D78A2067D39900D296C4 /* The Void.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Void.jpg"; sourceTree = "<group>"; };
+		B013D78A2067D39900D296C4 /* View Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View Image.jpg"; sourceTree = "<group>"; };
 		B013D78B2067D39A00D296C4 /* Multiverse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Multiverse.jpg; sourceTree = "<group>"; };
 		B013D78C2067D39A00D296C4 /* Amphitheatre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amphitheatre.jpg; sourceTree = "<group>"; };
 		B013D78D2067D39A00D296C4 /* Entrance 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Entrance 2.jpg"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				B013D7AF2067E80300D296C4 /* The Void.txt */,
 				B013D78C2067D39A00D296C4 /* Amphitheatre.jpg */,
 				B013D7952067D39D00D296C4 /* Andromeda.jpg */,
-				B013D78A2067D39900D296C4 /* The Void.jpg */,
+				B013D78A2067D39900D296C4 /* View Image.jpg */,
 				B013D7932067D39C00D296C4 /* Belvedere.jpg */,
 				B013D78E2067D39B00D296C4 /* Access To Cosimc Collision.jpg */,
 				B013D7942067D39D00D296C4 /* Cosmic Collisions.jpg */,
@@ -296,7 +296,7 @@
 				B013D79D2067D39E00D296C4 /* Amphitheatre.jpg in Resources */,
 				B013D7C02067E80700D296C4 /* Cosmic Collisions.txt in Resources */,
 				B013D7982067D39E00D296C4 /* Comet Walk.jpg in Resources */,
-				B013D79B2067D39E00D296C4 /* The Void.jpg in Resources */,
+				B013D79B2067D39E00D296C4 /* View Image.jpg in Resources */,
 				B013D7C52067E80800D296C4 /* North-South Avenue.txt in Resources */,
 				B013D7BF2067E80700D296C4 /* Comet Walk.txt in Resources */,
 				B013D7BE2067E80700D296C4 /* Mosaic.txt in Resources */,
